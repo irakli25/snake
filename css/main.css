@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #895825;
+}
+
+section{
+    background-image: url(../image/rocks.png);
+    background-color: #895825;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 256px;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url(../image/grass.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: lightskyblue;
+}
+
+.containerClass{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #895825;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFF;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.bodyElement{
+    width:10px;
+    height:10px;
+    background-color: red;
+    position: absolute;
+    border: 1px solid #FFF;
+    z-index: 1;
+}
+
+.food{
+    width:10px;
+    height:10px;
+    background-color: green;
+    position: absolute;
+    z-index: 0;
+}
