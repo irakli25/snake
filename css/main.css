@@ -89,6 +89,7 @@ header{
     color:var(--white);
     border: 2px solid transparent;
     transition: 0.3s;
+    cursor:pointer;
 }
 
 .up, .down{
@@ -119,7 +120,7 @@ header{
     width: 50px;
     background-color:var(--red);
     border-radius: 7px 0;
-   
+
     
 }
 
@@ -136,6 +137,13 @@ header{
     color:var(--buttonGreen);
     border: 2px solid var(--buttonGreen);
     transition: 0.3s;
+}
+
+.stopPlay{
+
+    padding: 0!important;
+    margin: 30px 0!important;
+    border-radius: 15px!important;
 }
 
 .gameMenu{

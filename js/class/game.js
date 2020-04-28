@@ -12,6 +12,7 @@ class Game{
         this.score = 0;
         this.level = 1;
         this.record = this.storage.get("record") === null ? 0 : this.storage.get("record");
+        this.interval = "";
       
         //   joystick buttons
             document.querySelector("button[direction='left']").addEventListener("click", () => {
@@ -42,6 +43,16 @@ class Game{
                     this.snake.changeDirection = false;
                 }
             })
+
+            document.getElementById("stopPlayButton").addEventListener("click", (element) => {
+                const button = document.getElementById("stopPlayButton");
+                const action = button.getAttribute("action");
+                switch(action){
+                    case "Stop" : this._stop(); button.setAttribute("action", "Play"); break;
+                    case "Play" : this.play(); button.setAttribute("action", "Stop"); break;
+                }
+                button.innerHTML = button.getAttribute("action");
+            })
         ///
     }
 
@@ -50,7 +61,7 @@ class Game{
         const levelText = document.getElementById("levelText");
 
         clearInterval(clear); // if recursion
-        const interval = setInterval(() => {
+        this.interval = setInterval(() => {
     
             pointText.innerHTML = this.score;
             levelText.innerHTML = this.level;
@@ -66,7 +77,7 @@ class Game{
                     if(this.score % levelUp == 0){
                         this.level++;
                         this.speed /= speedChange;
-                        this.play(interval);  // recursion
+                        this.play(this.interval);  // recursion
                     }
                 }
             }
@@ -87,6 +98,12 @@ class Game{
         },  this.speed);
         
     }
+
+    _stop = () =>{
+        clearInterval(this.interval);
+    }
+
+
     
 }
 
