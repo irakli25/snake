@@ -17,14 +17,24 @@ body {
     background-color: #895825;
     min-width: 320px;
     display: block;
+    overflow: hidden;
 }
 
 .gameSection{
     background-image: url(../image/rocks.png);
     background-color: #895825;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-position: top;
     background-size: 256px;
+}
+
+.joystickSection{
+    background-image: url(../image/rocks.png);
+    background-color: #895825;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: 256px;
+    padding-bottom: 171px;
 }
 
 header{
@@ -34,6 +44,14 @@ header{
     background-repeat: repeat-x;
     background-position: bottom;
     background-color: lightskyblue;
+}
+
+.flowers{
+    background-image: url(../image/flower.png);
+    background-repeat: space;
+    background-position: bottom;
+    height: 95px;
+    background-size: 60px;
 }
 
 .containerClass{
