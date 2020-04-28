@@ -28,7 +28,7 @@
 @media all and (max-width:800px) and (min-width:600px){
 
     body{
-        overflow: hidden;
+        overflow: visible;
     }
     
     .record {
@@ -47,7 +47,7 @@
 @media all and (max-width:600px) and (min-width:440px){
 
     body{
-        overflow: hidden;
+        overflow: visible;
     }
     
     .record {
@@ -79,7 +79,7 @@
 
 @media all and (max-width:440px) and (min-width:300px){
     body{
-        overflow: hidden;
+        overflow: visible;
     }
     
     .record {
@@ -112,7 +112,7 @@
 @media all and  (max-width:300px){
     
     body{
-        overflow: hidden;
+        overflow: visible;
     }
 
     .record {
