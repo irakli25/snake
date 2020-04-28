@@ -85,7 +85,7 @@ class Snake {
 
     _left = (item,index) => {
         
-        if(item.x < 1){
+        if(item.x < 1 && item.x != -1){
             if(this.walls){
                 this._death();
             }
@@ -124,7 +124,7 @@ class Snake {
 
     _up = (item,index) => {
         
-        if(item.y < 1){
+        if(item.y < 1 && item.y != -1){
             if(this.walls){
                 this._death();
             }

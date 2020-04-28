@@ -82,7 +82,7 @@ class Game{
                 }
             }
             else{ // game over
-                clearInterval(interval); 
+                clearInterval(this.interval); 
                 if (this.score > this.record){
                     this.storage.add("record", this.score);
                     this.record = this.score;
