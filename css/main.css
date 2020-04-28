@@ -11,6 +11,7 @@
     --buttonGreen:#77DD77;
     --green:#008000;
     --red:#c33e3a;
+    --blue:#87cef9;
 }
 
 body {
@@ -43,7 +44,7 @@ header{
     background-image: url(../image/grass.png);
     background-repeat: repeat-x;
     background-position: bottom;
-    background-color: lightskyblue;
+    background-color: var(--blue);
 }
 
 .flowers{
