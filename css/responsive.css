@@ -1,0 +1,126 @@
+
+@media all and (max-width:1700px) and (min-width:1140px){
+    .checkWalls{
+        width:15%;
+    }
+}
+
+@media all and (max-width:1140px) and (min-width:1064px){
+    .checkWalls{
+        width:20%;
+    }
+}
+
+@media all and (max-width:1064px) and (min-width:800px){
+    .record {
+        width: 30%;
+    }
+
+    .yourScore{
+        width:40%;
+    }
+
+    .checkWalls{
+        width:30%;
+    }
+}
+
+@media all and (max-width:800px) and (min-width:600px){
+    .record {
+        width: 50%;
+    }
+
+    .checkWalls{
+        width:50%;
+    }
+
+    .yourScore{
+        width:60%;
+    }
+}
+
+@media all and (max-width:600px) and (min-width:440px){
+    .record {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .yourScore{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .checkWalls{
+        width:100%;
+        font-size: 16px;
+    }
+
+    .logo{
+        width:100%;
+    }
+
+    #walls {
+        margin: 2px;
+        height: 15px;
+        width: 15px;
+    }
+
+}
+
+@media all and (max-width:440px) and (min-width:300px){
+    .record {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .yourScore{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .checkWalls{
+        width:100%;
+        font-size: 16px;
+    }
+
+    .logo{
+        width:100%;
+        background-size: cover;
+    }
+    #walls {
+        margin: 2px;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+
+@media all and  (max-width:300px){
+    .record {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .yourScore{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .checkWalls{
+        width:100%;
+        font-size: 16px;
+    }
+
+    .logo{
+        width:100%;
+        background-size: cover;
+    }
+
+    #walls {
+        margin: 2px;
+        height: 15px;
+        width: 15px;
+    }
+
+    
+}

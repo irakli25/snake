@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/snakeLogo.ico" type="image/ico" sizes="16x16">
     <title>Snake</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
     <header></header>
-    <section>
+    <section class="gameSection">
         <div id ="container" class="containerClass">
 
         </div>
     </section>
-    <section>
+    <section class="gameSection" >
         <div class="containerClass" >
-
+            <div class="tablo">
+                <div class="point">
+                    <div>Point :</div>
+                    <div id="pointText"></div>
+                </div>
+                <div class="level">
+                    <div>Level :</div>
+                    <div id="levelText"></div>
+                </div>
+            </div>
+            <div class="joystick">
+                <div class="up">
+                    <button class="gameButton" direction="up">up</button>
+                </div>
+                <div class = "leftRight">
+                    <button class="gameButton" direction="left" >left</button>
+                    <button class="gameButton" direction="right">right</button>
+                </div>
+                <div class="down">
+                    <button class="gameButton" direction="down" >down</button>
+                </div>
+            </div>
+            
         </div>
     </section>
+    <section id="startGameSection" class="gameMenu">
+        <div class="logo"></div>
+
+        <div class="record">
+            <div>Record :</div>
+            <div id="startRecordText">0</div>
+        </div>
+        <div class="checkWalls">
+            <div>Walls</div>
+            <input type="checkbox" id = "walls"/>
+        </div>
+        <div class="buttonWrap">
+            <button id="startGame">Play Game</button>
+        </div>
+    </section>
+
+    <section id="endGameSection" class="gameMenu hide">
+        <div class="logo"></div>
+        <div class="gameOver">Game Over</div>
+        <div class="yourScore">
+            <div>Your score :</div>
+            <div id="yourScoreText">0</div>
+        </div>
+        <div class="record">
+            <div>Record :</div>
+            <div id="endRecordText">0</div>
+        </div>
+        <div class="buttonWrap">
+            <button id="restartGame">Restart Game</button>
+        </div>
+    </section>
+
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
