@@ -12,6 +12,7 @@ const endGameSection = document.getElementById("endGameSection");
 const startRecordText = document.getElementById("startRecordText");
 const mainStorage = new Storage();
 
+// get device record
 startRecordText.innerHTML = mainStorage.get("record") === null ? 0 : mainStorage.get("record");
 
 // start game
@@ -21,6 +22,7 @@ startGame.addEventListener("click", (element) =>  {
     game.play();
 })
 
+// restart game
 restartGame.addEventListener("click", () => {
     endGameSection.classList.add("hide");
     const game = new Game();
